@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Canciones>
+    <Cancion>
+        <Duracion>4:23 minutos</Duracion>
+        <Año>2021</Año>
+        <Titulo>AMOR DE CINE</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Emiliano</Nombre>
+                <Apellidos>Rodriguez</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Humberto</Nombre>
+                <Apellidos>Rodriguez</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombre>Humbe</Nombre>
+            </Productor>
+            <Productor>
+                <Nombre>Emiliano</Nombre>
+                <Apellidos>Rodriguez</Apellidos>
+            </Productor>
+        </Productores>
+        <Sello>Sony Music México</Sello>
+        <Artista>Humbe</Artista>
+    </Cancion>
+
+    <Cancion>
+        <Duracion>3:34 minutos</Duracion>
+        <Año>2020</Año>
+        <Titulo>309</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Rodrigo</Nombre>
+                <Apellidos>Torres</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombre>Rodrigo Torres</Nombre>
+            </Productor>
+        </Productores>
+        <Sello>No Pedi Permiso</Sello>
+        <Artista>NSQK</Artista>
+    </Cancion>
+
+    <Cancion>
+        <Duracion>3:20 minutos</Duracion>
+        <Año>2018</Año>
+        <Titulo>Love Shot</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Anthony</Nombre>
+                <Apellidos>Russo</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Anthony</Nombre>
+                <Apellidos>Russo</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Pablo</Nombre>
+                <Apellidos>Bowman</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Chan-Yeol</Nombre>
+                <Apellidos>Park</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+        <Productor>
+            <Nombre>Anthony Russo</Nombre>
+        </Productor>
+        </Productores>
+        <Sello>SM Entertainment</Sello>
+        <Artista>EXO</Artista>
+    </Cancion>
+</Canciones>
