@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Canciones" type="CancionesType"/>
+  <xs:complexType name="CompositorType">
+    <xs:sequence>
+      <xs:element name="Nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Emiliano"/>
+            <xs:enumeration value="Humberto"/>
+            <xs:enumeration value="Rodrigo"/>
+            <xs:enumeration value="Anthony"/>
+            <xs:enumeration value="Pablo"/>
+            <xs:enumeration value="Chan-Yeol"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Rodriguez"/>
+            <xs:enumeration value="Torres"/>
+            <xs:enumeration value="Russo"/>
+            <xs:enumeration value="Bowman"/>
+            <xs:enumeration value="Park"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CompositoresType">
+    <xs:sequence>
+      <xs:element type="CompositorType" name="Compositor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductorType">
+    <xs:sequence>
+      <xs:element name="Nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Humbe"/>
+            <xs:enumeration value="Emiliano"/>
+            <xs:enumeration value="Rodrigo Torres"/>
+            <xs:enumeration value="Anthony Russo"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Apellidos" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductoresType">
+    <xs:sequence>
+      <xs:element type="ProductorType" name="Productor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancionType">
+    <xs:sequence>
+      <xs:element name="Titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="AMOR DE CINE"/>
+            <xs:enumeration value="309"/>
+            <xs:enumeration value="Love Shot"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="CompositoresType" name="Compositores"/>
+      <xs:element type="ProductoresType" name="Productores"/>
+      <xs:element name="Sello">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sony Music México"/>
+            <xs:enumeration value="No Pedi Permiso"/>
+            <xs:enumeration value="SM Entertainment"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Artista">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Humbe"/>
+            <xs:enumeration value="NSQK"/>
+            <xs:enumeration value="EXO"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="duracion" use="optional"/>
+    <xs:attribute type="xs:string" name="año" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="CancionesType">
+    <xs:sequence>
+      <xs:element type="CancionType" name="Cancion" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
